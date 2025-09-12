@@ -1,0 +1,83 @@
+{
+  "drivers": [
+    { "id": 1, "name": "Amit Sharma", "licenseNo": "UP32DL1234", "status": "pending" },
+    { "id": 2, "name": "Ravi Verma", "licenseNo": "UP32DL5678", "status": "approved" }
+  ],
+
+  "employees": [
+    { "id": 1, "name": "Sunil Yadav", "busId": 101, "status": "approved" },
+    { "id": 2, "name": "Meena Kumari", "busId": null, "status": "pending" }
+  ],
+
+  "buses": [
+    {
+      "id": 101,
+      "busNo": "UP32AB1234",
+      "routeId": 201,
+      "driverId": 2,
+      "capacity": 50,
+      "occupancy": "Medium",
+      "location": { "lat": 26.8467, "lng": 80.9462 }
+    },
+    {
+      "id": 102,
+      "busNo": "UP32XY5678",
+      "routeId": 202,
+      "driverId": 1,
+      "capacity": 40,
+      "occupancy": "Low",
+      "location": { "lat": 26.9124, "lng": 75.7873 }
+    }
+  ],
+
+  "routes": [
+    {
+      "id": 201,
+      "source": "Lucknow Charbagh",
+      "destination": "Hazratganj",
+      "stops": ["Aminabad", "Kaiserbagh", "Capitol Mall"],
+      "timings": "8:00 AM - 10:00 PM"
+    },
+    {
+      "id": 202,
+      "source": "Lucknow Polytechnic",
+      "destination": "Indira Nagar",
+      "stops": ["Munshipulia", "Bhootnath", "Wave Mall"],
+      "timings": "9:00 AM - 9:00 PM"
+    }
+  ],
+
+  "users": [
+    {
+      "id": 1,
+      "name": "Rahul Singh",
+      "favourites": ["UP32AB1234"],
+      "reminders": [{ "busNo": "UP32AB1234", "time": "9:00 AM" }]
+    },
+    {
+      "id": 2,
+      "name": "Priya Gupta",
+      "favourites": ["UP32XY5678"],
+      "reminders": []
+    }
+  ],
+
+  "complaints": [
+    {
+      "id": 1,
+      "by": "user",
+      "userId": 1,
+      "busNo": "UP32AB1234",
+      "message": "Bus always late in the morning.",
+      "status": "open"
+    },
+    {
+      "id": 2,
+      "by": "employee",
+      "employeeId": 2,
+      "busNo": "UP32XY5678",
+      "message": "AC not working properly.",
+      "status": "resolved"
+    }
+  ]
+}
