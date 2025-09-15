@@ -18,6 +18,7 @@ build/
 # IDE/editor settings
 .vscode/
 .idea/
+.env
 *.suo
 *.ntvs*
 *.njsproj
