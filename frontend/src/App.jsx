@@ -23,15 +23,15 @@ const App = () => (
         <div className="min-h-screen bg-gradient-subtle">
           <Navigation />
           <div className="pt-16">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/map" element={<LiveMap />} />
-              <Route path="/search" element={<SearchTrack />} />
-              <Route path="/schedules" element={<Schedules />} />
-              <Route path="/signin" element={<SignIn />} />
-              <Route path="/signup" element={<SignUp />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/map" element={<LiveMap />} />
+            <Route path="/search" element={<SearchTrack />} />
+            <Route path="/schedules" element={<Schedules />} />
+            <Route path="/signin" element={<SignIn />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
           </div>
         </div>
       </BrowserRouter>
